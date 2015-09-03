@@ -8,6 +8,9 @@ using Android.Widget;
 using Android.OS;
 
 namespace werwer
+
+
+
 {
 	[Activity (Label = "werwer", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
@@ -16,7 +19,7 @@ namespace werwer
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			base.OnCreate (bundle);ArrayAdapter
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -27,6 +30,7 @@ namespace werwer
 			
 			button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
+
 			};
 		}
 	}
